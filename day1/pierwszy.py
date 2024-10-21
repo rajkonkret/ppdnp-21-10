@@ -54,3 +54,34 @@ print("39" + str(39))  # 3939, łaczenie tekstów, konkatenacja str() - rutowani
 print("8" + "8" + "8")
 print(8 + 8 + 8)  # 24
 
+# zmienna - pudełko na dane
+liczba = 39
+print(liczba)  # 39
+print(type(liczba))  # <class 'int'>
+print("5" * liczba)  # 555555555555555555555555555555555555555
+
+# typowanie dynamiczne
+liczba = "39"
+print(type(liczba))  # <class 'str'>
+# nie deklarujemy typów, mozemy w kazdej chwili dowylny typ wrzucic do danej zmiennej
+
+name = "Radek"
+print(name + "Kowalski")  # RadekKowalski
+
+name = 90
+# print(name + "Kowalski")  # TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+# podpowiedzi typu, to nie jest deklaracja typu!!!
+name: str = "Radek"
+name = 90
+print(name)  # 90
+
+# nazwy zmiennych z małej litery
+# snake_case
+# zmienna powinna podpowiadać co zawiera
+
+age = 56
+print(age)
+print(type(age))
+# 56
+# <class 'int'>
