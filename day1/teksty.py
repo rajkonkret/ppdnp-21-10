@@ -38,3 +38,36 @@ print(encode_s)  # b'Witaj \xc5\x9awiecie'
 print(type(encode_s))  # <class 'bytes'>
 
 print(encode_s.decode('utf-8'))  # Witaj Świecie
+
+print("\a")
+
+imie = "Radek"
+# f - string - sformatowane teksty
+tekst_format = f"Mam na imię {imie} i lubię pythona."
+print(tekst_format)  # Mam na imię Radek i lubię pythona.
+
+tekst_format2 = f"\tMam na imię {imie}\n i lubię pythona.\b"
+tekst_format3 = f"\t Mam na imię {imie}\n i lubię pythona.\b"
+print(tekst_format2)  # "	 ","	"
+print(tekst_format3)  # "	 ","	"
+# "Mam na imię Radek i lubię pythona.
+# 	Mam na imię Radek
+#  i lubię pythona
+# 	 Mam na imię Radek
+#  i lubię pythona"
+# "	Mam na imię Radek
+#  i lubię pythona"
+
+starszy = "Witaj %s!"  # %s - %s - łańcuch znaków (string)
+print(starszy % imie)  # Witaj Radek!
+
+print("Witaj {}!".format(imie))  # Witaj Radek!
+
+# tekst wielolinijkowy
+print("""Tekst
+    wielolinijkowy""")
+# "Tekst
+#     wielolinijkowy"
+
+print(len(tekst_format2))  # długość 37
+print(len(tekst_format3))  # długość 38
