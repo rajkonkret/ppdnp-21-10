@@ -89,7 +89,7 @@ b = 7
 print(a, b)  # 3 7
 
 lista_2 = lista  # a = b ? kopia adresu pamięci, referencja
-lista_copy = lista.copy() # kopiowanie elementów listy
+lista_copy = lista.copy() # kopiowanie elementów listy, dodałem przed clear()
 # obie zmienne wskazują na ten sam adres
 print(lista_2, lista)
 # ['Radek', 'Karolina', 'Tomek', 'Jadwiga', 'Jan', 'Sylwia'] ['Radek', 'Karolina', 'Tomek', 'Jadwiga', 'Jan', 'Sylwia']
