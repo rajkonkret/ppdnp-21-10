@@ -110,3 +110,4 @@ print(id(lista_copy))
 # 2914818817856
 # ['Radek', 'Karolina', 'Tomek', 'Jadwiga', 'Jan', 'Sylwia']
 # 2914818817792 - lista_copy, lista_copy = lista.copy()
+
