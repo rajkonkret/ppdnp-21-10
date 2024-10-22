@@ -89,7 +89,7 @@ b = 7
 print(a, b)  # 3 7
 
 lista_2 = lista  # a = b ? kopia adresu pamięci, referencja
-lista_copy = lista.copy() # kopiowanie elementów listy, dodałem przed clear()
+lista_copy = lista.copy()  # kopiowanie elementów listy, dodałem przed clear()
 # obie zmienne wskazują na ten sam adres
 print(lista_2, lista)
 # ['Radek', 'Karolina', 'Tomek', 'Jadwiga', 'Jan', 'Sylwia'] ['Radek', 'Karolina', 'Tomek', 'Jadwiga', 'Jan', 'Sylwia']
@@ -110,4 +110,34 @@ print(id(lista_copy))
 # 2914818817856
 # ['Radek', 'Karolina', 'Tomek', 'Jadwiga', 'Jan', 'Sylwia']
 # 2914818817792 - lista_copy, lista_copy = lista.copy()
+
+liczby = [54, 999, 34, 22, 12.34, 687]
+print(type(liczby))  # <class 'list'>
+
+# zmienia bazową listę
+liczby.sort()
+print(liczby)  # [12.34, 22, 34, 54, 687, 999]
+
+liczby = [54, 999, 34, 22, 12.34, 687, "A"]
+print(type(liczby))  # <class 'list'>
+
+# liczby.sort()  # TypeError: '<' not supported between instances of 'str' and 'int'
+
+print(ord("A"))  # kod ascii dla literki "A", 65
+
+lista_osob = ['radek', 'tomek', 'zenek', 'aldona']
+lista_osob.sort()
+print(lista_osob)  # ['aldona', 'radek', 'tomek', 'zenek']
+
+lista_osob.sort(reverse=True)
+print(lista_osob)  # ['zenek', 'tomek', 'radek', 'aldona']
+
+# kod znaku
+print(ord("z"))
+print(ord("ł"))
+# 122
+# 322
+
+lista_osob.reverse()
+print(lista_osob)  # ['aldona', 'radek', 'tomek', 'zenek']
 
