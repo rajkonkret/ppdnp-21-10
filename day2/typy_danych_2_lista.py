@@ -79,4 +79,34 @@ print(lista)  # ['Radek', 'Karolina', 'Tomek', 'Jadwiga', 'Jan', 'Sylwia', 'Agat
 print(lista.pop(8))  # Mikołaj
 print(lista)  # ['Radek', 'Karolina', 'Tomek', 'Jadwiga', 'Jan', 'Sylwia', 'Agata', 'Mariusz']
 print(lista.pop(-2))  # Agata
-print(lista.pop())  # usunie ostatni - Mariusz
+print(lista.pop())  # usunie ostatni - Mariusz,  Remove and return item at index (default last).
+
+a = 1
+b = 3
+a = b
+print(a, b)  # 3 3
+b = 7
+print(a, b)  # 3 7
+
+lista_2 = lista  # a = b ? kopia adresu pamięci, referencja
+lista_copy = lista.copy() # kopiowanie elementów listy
+# obie zmienne wskazują na ten sam adres
+print(lista_2, lista)
+# ['Radek', 'Karolina', 'Tomek', 'Jadwiga', 'Jan', 'Sylwia'] ['Radek', 'Karolina', 'Tomek', 'Jadwiga', 'Jan', 'Sylwia']
+lista.clear()  # usunie wszystkie elementy listy
+print(lista_2, lista)  # [] []
+print(id(lista))
+print(id(lista_2))
+# 2518043791744
+# 2518043791744
+print(id(lista_15))
+# 2761099645312
+# 2761099645312
+# 2761103392576
+print(lista_copy)
+print(id(lista_copy))
+# 2914815381888 - lista
+# 2914815381888 - lista2
+# 2914818817856
+# ['Radek', 'Karolina', 'Tomek', 'Jadwiga', 'Jan', 'Sylwia']
+# 2914818817792 - lista_copy, lista_copy = lista.copy()
