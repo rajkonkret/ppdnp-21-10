@@ -43,5 +43,22 @@ dict_small = {'x': 2}
 dict_small.update([('y', 3), ('z', 4)])
 print(dict_small)  # {'x': 2, 'y': 3, 'z': 4}
 
-dict_small.update([("k", 8)])
+dict_small.update([("k", 8)])  # lista krotek z jedym elementem
 print(dict_small)  # {'x': 2, 'y': 3, 'z': 4, 'k': 8}
+
+# # input()  - pobiera dane od uzytkownika
+# tekst = input("Podaj imię")
+# print("Masz na imię", tekst)
+# Podaj imięTomek
+# Masz na imię Tomek
+
+# aplikacja kalkulator
+# pobrac dwie liczby -> input x 2
+# wyswietlic wynik (dodawanie) -> print
+# input zwraca str
+a = int(input("Podaj pierwszą liczbę"))
+b = input("Podaj drugą liczbę")
+print(a + float(b))
+# Podaj pierwszą liczbę3
+# Podaj drugą liczbę4
+# 7.0
