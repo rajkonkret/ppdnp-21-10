@@ -141,3 +141,24 @@ print(ord("ł"))
 lista_osob.reverse()
 print(lista_osob)  # ['aldona', 'radek', 'tomek', 'zenek']
 
+liczby[3] = 666
+print(liczby[0:3])  # [54, 999, 34]
+print(liczby[-2])  # 687
+print(liczby)  # [54, 999, 34, 666, 12.34, 687, 'A']
+
+del liczby  # usuniecie listy z pamięci - referencji
+# print(liczby)  # NameError: name 'liczby' is not defined
+
+tekst = "Pyth on."
+lista1 = list(tekst)
+print(lista1)  # ['P', 'y', 't', 'h', ' ', 'o', 'n', '.'] rozpakowanie sekwencji
+
+lista2 = [tekst]
+print(lista2)  # ['Pyth on.']
+
+krotka = tuple(lista_osob)  # tuple() - rzutowanie listy na krotke (tuplę)
+print(type(krotka))
+print(krotka)
+# ['aldona', 'radek', 'tomek', 'zenek'] - lista
+# <class 'tuple'>
+# ('aldona', 'radek', 'tomek', 'zenek') - krotka
