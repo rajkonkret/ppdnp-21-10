@@ -62,3 +62,13 @@ print(a + float(b))
 # Podaj pierwszą liczbę3
 # Podaj drugą liczbę4
 # 7.0
+
+# napisać aplikacji słownik
+# pol - ang
+# słowa do przetłumaczenia -> klucze
+# pobrac słowo do przetłummaczenia
+# wyswietlic tłumaczenie -> wartość dla klucza
+# słownik z danymi
+#  print wyswietli klucze
+# input pobierze słówko od użytkownika
+# print wyświetli tłumaczenie
