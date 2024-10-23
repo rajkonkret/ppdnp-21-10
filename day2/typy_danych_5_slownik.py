@@ -56,9 +56,9 @@ print(dict_small)  # {'x': 2, 'y': 3, 'z': 4, 'k': 8}
 # pobrac dwie liczby -> input x 2
 # wyswietlic wynik (dodawanie) -> print
 # input zwraca str
-a = int(input("Podaj pierwszą liczbę"))
-b = input("Podaj drugą liczbę")
-print(a + float(b))
+# a = int(input("Podaj pierwszą liczbę"))
+# b = input("Podaj drugą liczbę")
+# print(a + float(b))
 # Podaj pierwszą liczbę3
 # Podaj drugą liczbę4
 # 7.0
@@ -72,3 +72,8 @@ print(a + float(b))
 #  print wyswietli klucze
 # input pobierze słówko od użytkownika
 # print wyświetli tłumaczenie
+pol_ang = {'kot': 'cat', 'pies': 'dog', 'dach': 'roof'}
+print("Znam takie słówka", pol_ang.keys())
+odp = input("Podaj słówko do przetłumaczenia")
+# print(pol_ang[odp.strip().casefold()])
+print(pol_ang.get(odp.strip().casefold(), "nie mo"))
