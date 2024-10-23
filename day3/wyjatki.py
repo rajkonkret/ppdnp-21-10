@@ -11,7 +11,7 @@ try:
     # print(5 / 0)
     # print(3 / "0")
     # print(5 / int("A"))
-    wynik = 90 / z
+    wynik = 90 / z # Bład name 'z' is not defined
     # wynik = 90 / 3
 except ZeroDivisionError:
     print("Nie dziel przez zero")
