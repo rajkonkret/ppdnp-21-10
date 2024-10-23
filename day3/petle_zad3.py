@@ -66,3 +66,10 @@ print(lista_int)  # ['1', '2', '456', '7890']
 # Podaj liczbę6.78
 # ['5']
 # [5]
+
+# usunięcie wszystkich wystąpień elementu 5 z listy bez zmiany kolejności
+my_list = [1, 5, 2, 3, 5, 4, 5, 6, 5]
+while 5 in my_list:
+    my_list.remove(5)
+
+print(my_list)  # [1, 2, 3, 4, 6]
