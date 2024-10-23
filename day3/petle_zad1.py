@@ -92,3 +92,26 @@ for i in range(-10, 0):
 # -3
 # -2
 # -1
+
+# spam += 1    spam = spam + 1
+# spam -= 1    spam = spam - 1
+# spam *= 1    spam = spam * 1
+# spam /= 1    spam = spam / 1
+# spam %= 1    spam = spam % 1
+for c in lista3:
+    if c == 2:
+        c += 1 # c = c + 1
+        print("tylko dla c=2")
+        print(c)
+    print("Przy każdym przejsciu pętli")
+
+print("Po zakońćzeniu pętli")
+# Przy każdym przejsciu pętli
+# tylko dla c=2
+# 3
+# Przy każdym przejsciu pętli
+# Przy każdym przejsciu pętli
+# Przy każdym przejsciu pętli
+# Przy każdym przejsciu pętli
+# Po zakońćzeniu pętli
+
