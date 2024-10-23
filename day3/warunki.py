@@ -2,7 +2,6 @@
 # instrukcje sterowania przepływem prograamu
 # warunek musi zwracac bool
 # if
-from day2.typy_danych_2_lista import lista
 
 odp = True
 print(bool(odp))  # True
@@ -65,9 +64,35 @@ print(f"Rabat wynosi", rabacik)  # Rabat wynosi 25
 rabat = 25 if suma_zam > 100 else 0
 print(f"Rabat wynosi", rabat)  # Rabat wynosi 25 ternary operator, operator warunkowy
 
+#  python.exe .\day3\warunki.py
+
 # zasymulujemy system zbierania logów
-# zmienne będą przechowywac nazwę systemu jaki przysłał log
+# zmienna będzie przechowywac nazwę systemu jaki przysłał log
 # email, console, inny (else)
 # console: "Stało się coś strasznego"
 # email "System email"
 # inny: "Nie znam takiego systemu"
+# gdy sytem jest email
+# do listy wpisac opis błedu
+# error, medium i inny
+# error -> Krytyczny
+alert_system = "email"
+error = "error"
+lista_b = []
+
+if alert_system == "console":
+    print("Stało się coś strasznego")
+elif alert_system == "email":
+    print("System email")
+    if error == "error":
+        lista_b.append("Krytyczny")
+    elif error == "medium":
+        lista_b.append("Ostrzeżenie")
+    else:
+        lista_b.append("Inny")
+else:
+    print("Nie znam takiego systemu")
+
+print(lista_b)
+# System email
+# ['Krytyczny']
