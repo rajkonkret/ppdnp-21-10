@@ -8,3 +8,4 @@ radians = math.radians(degrees)
 
 print(radians)  # 1.5707963267948966
 print(math.sin(radians))  # 1.0
+# numpy, scipy, pandas
