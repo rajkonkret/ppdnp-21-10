@@ -54,6 +54,12 @@ class Orzel(Ptak):
         print("Rozpoczynam polowanie")
 
 
+class Sowa(Ptak):
+    """
+    Klasa Sowa
+    """
+
+
 # po oznaczeniu klasy jako abstrakcyjna nie możemy stworzyć obiektu klasy Ptak
 # Traceback (most recent call last):
 #   File "C:\Users\CSComarch\PycharmProjects\ppdnp-21-10\day5\kl3.py", line 37, in <module>
@@ -79,3 +85,23 @@ or2.polowanie()
 # Rozpoczynam polowanie
 
 kur2.dziobanie()  # Idę sobie podziobać
+
+# obiekty róznych klas
+# klasy dzidziczą po klasie Ptak
+# dzieki wymuszeniu nadpisania  metody abstrakcyjnej we wszystkich dziedziczących
+# możemy w zakresie tej metody traktować je jakby były obiektami tej samej klasy
+# to się nazywa polimorfizm
+lista = [kur2, or2]
+for i in lista:
+    i.wydaj_odglos()
+# Ko ko ko ko
+# Kier kir kier
+
+
+# nie stworzymy obiektu klasy Sowa bo nie ma metody wydaj_odglos
+# sowa = Sowa("Sowa", 20)
+# Traceback (most recent call last):
+#   File "C:\Users\CSComarch\PycharmProjects\ppdnp-21-10\day5\kl3.py", line 100, in <module>
+#     sowa = Sowa("Sowa", 20)
+#            ^^^^^^^^^^^^^^^^
+# TypeError: Can't instantiate abstract class Sowa without an implementation for abstract method 'wydaj_odglos'
